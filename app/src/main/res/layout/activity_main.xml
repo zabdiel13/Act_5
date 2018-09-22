@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
 
     <EditText
         android:id="@+id/editText"
@@ -14,7 +12,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre" />
+        android:text="Nombre"/>
 
     <EditText
         android:id="@+id/editText2"
@@ -22,7 +20,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Apellido" />
+        android:text="Apellido"/>
 
     <EditText
         android:id="@+id/editText3"
@@ -30,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Edad" />
+        android:text="Edad"/>
 
     <Button
         android:id="@+id/button"
@@ -38,7 +36,8 @@
         android:layout_height="wrap_content"
         android:onClick="ver"
         android:text="Aceptar"
-        tools:ignore="MissingConstraints,OnClick" />
+        tools:ignore="MissingConstraints,OnClick"
+        android:layout_margin="5dp"/>
 
     <ListView
         android:id="@+id/listView"

@@ -11,7 +11,6 @@ import android.widget.ListView;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     ListView listView;
     List<String> usuario = new ArrayList<>();
 
@@ -19,14 +18,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         final EditText nombre = (EditText) findViewById(R.id.editText);
         final EditText apellido = (EditText) findViewById(R.id.editText2);
         final EditText edad = (EditText) findViewById(R.id.editText3);
         final Button button = (Button) findViewById(R.id.button);
         listView =(ListView)findViewById(R.id.listView);
         final ArrayAdapter<String>Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,usuario);
-
         listView.setAdapter(Adapter);
 
         button.setOnClickListener(new View.OnClickListener() {
